@@ -1,4 +1,4 @@
-import { Team } from '../index'
+import { Team } from "../index";
 
 describe("Team", () => {
   let team;
@@ -21,7 +21,11 @@ describe("Team", () => {
 
   it("should add all members to the team", () => {
     team.addAll(warrior, mage, archer);
-    const expected = [{ name: "Warrior" }, { name: "Mage" }, { name: "Archer" }];
+    const expected = [
+      { name: "Warrior" },
+      { name: "Mage" },
+      { name: "Archer" },
+    ];
     expect(team.toArray()).toEqual(expected);
   });
 
